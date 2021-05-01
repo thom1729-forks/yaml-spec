@@ -1,26 +1,23 @@
 yaml-spec
 =========
 
-The YAML Specification
+The 1.2 YAML Specification
 
 ## Overview
 
-This repository contains the source materials and build files for the [YAML
-Specification](http://www.yaml.org/spec/1.2/spec.html).
+This directory contains the source materials and build files for the [YAML
+1.2 Specification](http://www.yaml.org/spec/1.2/spec.html).
 
 ## Build Process
 
-To turn these files into HTML and PDF representations of the spec, you can run:
-`make all`, but that requires a lot of prerequisites to be installed. The
-easier method is to do this (requires Docker):
-
+To generate the HTML and PDF representations of the spec, run:
 ```
-git clone https://github.com/yaml/yaml-spec-builder-docker
-cd yaml-spec-builder-docker
-make spec
+make html
+make pdf
+make all    # both html and pdf
 ```
 
-## Contributing
+You will need these prerequisites:
 
-Contributions are welcome. File issues and pull requests
-[here](https://github.com/yaml/yaml-spec/issues).
+* GNU make
+* Docker
