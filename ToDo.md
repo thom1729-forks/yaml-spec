@@ -1,0 +1,34 @@
+## Next
+
+- [ ] Add License file
+  - Most likely MIT as most YAML projects use this
+  - See: https://github.com/twbs/bootstrap/blob/main/LICENSE
+  - Attribute to "The YAML Specification Authors"
+  - See: https://choosealicense.com/
+- [ ] Add text to empty placeholder files
+  - [ ] Acknowledgments.md
+  - [ ] Authors.md
+  - [ ] Changes.md
+    - See https://github.com/olivierlacan/keep-a-changelog/blob/main/CHANGELOG.md
+  - [ ] Contributing.md
+  - [ ] .github/codeowners
+  - [ ] .github/issue_template.md
+  - [ ] .github/pull_request_template.md
+  - [ ] .github/security.md
+  - https://github.com/kmindi/special-files-in-repository-root
+  - <https://github.com/joelparkerhenderson/github_special_files_and_paths>
+- Add text to empty placeholder ReadMe.md files
+  - [ ] 1.2/ReadMe.md
+  - [ ] rfc/ReadMe.md
+  - [ ] www/ReadMe.md
+  - [ ] dom/ReadMe.md
+  - [ ] feature/ReadMe.md
+  - [ ] stdlib/ReadMe.md
+  - [ ] test/ReadMe.md
+  - [ ] doc/ReadMe.md
+  - [ ] story/ReadMe.md
+  - [ ] spec/ReadMe.md
+  - [ ] schema/ReadMe.md
+  - [ ] path/ReadMe.md
+  - [ ] grammar/ReadMe.md
+

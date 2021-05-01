@@ -1,0 +1,1 @@
+- [ ] Convert the 1.2/spec.dbk to spec/spec.md
