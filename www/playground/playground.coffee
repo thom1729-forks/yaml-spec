@@ -1,4 +1,6 @@
 class window.Playground
+  @
+
   @refparser_events: (text)->
     parser = new Parser(new TestReceiver)
     parser.parse(text)
@@ -49,6 +51,8 @@ class window.Playground
 
   @libyaml_events: (text)->
     return @sandbox_events(text, 'cmd=c-libyaml-event')
+
+
 
   @sandbox_events: (text, args)->
     value = @localhost_server(text, args)

@@ -1,14 +1,20 @@
 EATME := eatme
 REF_PARSER := ref-parser
+REF_STACK := ref-stack
+YAML_SCHEMA := yaml-schema
 NPM_YAML := npm-yaml
 
 EATME_REPO := https://github.com/eatme-dev/eatme
 REF_PARSER_REPO := https://github.com/yaml/yaml-reference-parser
+REF_STACK_REPO := https://github.com/yaml/yaml-reference-stack
+YAML_SCHEMA_REPO := https://github.com/yaml/yaml-schema
 NPM_YAML_REPO := https://github.com/eemeli/yaml
 
 ALL := \
     $(EATME) \
     $(REF_PARSER) \
+    $(REF_STACK) \
+    $(YAML_SCHEMA) \
     $(NPM_YAML) \
 
 default:
@@ -23,6 +29,12 @@ $(EATME):
 
 $(REF_PARSER):
 	git clone $(REF_PARSER_REPO) $@
+
+$(REF_STACK):
+	git clone $(REF_STACK_REPO) --branch=devel $@
+
+$(YAML_SCHEMA):
+	git clone $(YAML_SCHEMA_REPO) --branch=devel $@
 
 $(NPM_YAML):
 	git clone $(NPM_YAML_REPO) $@
