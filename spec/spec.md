@@ -1623,21 +1623,21 @@ ERROR:
 
 _Indicators_ are characters that have special semantics.
 
-A ["**`-`**"] (**`#x2D`**, hyphen) denotes a [block sequence] entry.
+["**`-`**"] (**`#x2D`**, hyphen) denotes a [block sequence] entry.
 
 ```
 [#] c-sequence-entry ::= "-"
 ```
 
 
-A ["**`?`**"] (**`#x3F`**, question mark) denotes a [mapping key].
+["**`?`**"] (**`#x3F`**, question mark) denotes a [mapping key].
 
 ```
 [#] c-mapping-key ::= "?"
 ```
 
 
-A ["**`:`**"] (**`#x3A`**, colon) denotes a [mapping value].
+["**`:`**"] (**`#x3A`**, colon) denotes a [mapping value].
 
 ```
 [#] c-mapping-value ::= ":"
@@ -1676,35 +1676,35 @@ mapping:
 * [c-mapping-value] <!-- : -->
 
 
-A ["**`,`**"] (**`#x2C`**, comma) ends a [flow collection] entry.
+["**`,`**"] (**`#x2C`**, comma) ends a [flow collection] entry.
 
 ```
 [#] c-collect-entry ::= ","
 ```
 
 
-A ["**`[`**"] (**`#x5B`**, left bracket) starts a [flow sequence].
+["**`[`**"] (**`#x5B`**, left bracket) starts a [flow sequence].
 
 ```
 [#] c-sequence-start ::= "["
 ```
 
 
-A ["**`]`**"] (**`#x5D`**, right bracket) ends a [flow sequence].
+["**`]`**"] (**`#x5D`**, right bracket) ends a [flow sequence].
 
 ```
 [#] c-sequence-end ::= "]"
 ```
 
 
-A ["**`{`**"] (**`#x7B`**, left brace) starts a [flow mapping].
+["**`{`**"] (**`#x7B`**, left brace) starts a [flow mapping].
 
 ```
 [#] c-mapping-start ::= "{"
 ```
 
 
-A ["**`}`**"] (**`#x7D`**, right brace) ends a [flow mapping].
+["**`}`**"] (**`#x7D`**, right brace) ends a [flow mapping].
 
 ```
 [#] c-mapping-end ::= "}"
@@ -1738,8 +1738,8 @@ mapping: { sky: blue, sea: green }
 * [c-collect-entry] <!-- , -->
 
 
-An ["**`#`**"] (**`#x23`**, octothorpe, hash, sharp, pound, number sign)
-denotes a [comment].
+["**`#`**"] (**`#x23`**, octothorpe, hash, sharp, pound, number sign) denotes a
+[comment].
 
 ```
 [#] c-comment ::= "#"
@@ -1762,13 +1762,13 @@ denotes a [comment].
 * [c-comment] <!-- # -->
 
 
-An ["**`&`**"] (**`#x26`**, ampersand) denotes a [node’s anchor property].
+["**`&`**"] (**`#x26`**, ampersand) denotes a [node’s anchor property].
 
 ```
 [#] c-anchor ::= "&"
 ```
 
-An ["**`*`**"] (**`#x2A`**, asterisk) denotes an [alias node].
+["**`*`**"] (**`#x2A`**, asterisk) denotes an [alias node].
 
 
 ```
@@ -1811,14 +1811,14 @@ alias: *anchor
 * [c-alias] <!-- * -->
 
 
-A ["**`|`**"] (**`7C`**, vertical bar) denotes a [literal block scalar].
+["**`|`**"] (**`7C`**, vertical bar) denotes a [literal block scalar].
 
 ```
 [#] c-literal ::= "|"
 ```
 
 
-A ["**`>`**"] (**`#x3E`**, greater than) denotes a [folded block scalar].
+["**`>`**"] (**`#x3E`**, greater than) denotes a [folded block scalar].
 
 ```
 [#] c-folded ::= ">"
@@ -1851,8 +1851,8 @@ folded: >
 * [c-literal] <!-- | -->
 * [c-folded] <!-- > -->
 
-An ["**`'`**"] (**`#x27`**, apostrophe, single quote) surrounds a
-[single-quoted flow scalar].
+["**`'`**"] (**`#x27`**, apostrophe, single quote) surrounds a [single-quoted
+flow scalar].
 
 
 ```
@@ -1860,7 +1860,7 @@ An ["**`'`**"] (**`#x27`**, apostrophe, single quote) surrounds a
 ```
 
 
-A ["**`"`**"] (**`#x22`**, double quote) surrounds a [double-quoted flow
+["**`"`**"] (**`#x22`**, double quote) surrounds a [double-quoted flow
 scalar].
 
 ```
@@ -1891,7 +1891,7 @@ double: "text"
 * [c-double-quote] <!-- 2:9 2:14 -->
 
 
-A ["**`%`**"] (**`#x25`**, percent) denotes a [directive] line.
+["**`%`**"] (**`#x25`**, percent) denotes a [directive] line.
 
 ```
 [#] c-directive ::= "%"
