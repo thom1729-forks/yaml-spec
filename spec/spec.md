@@ -6219,7 +6219,7 @@ Since YAML does not specify a particular accuracy, using floating-point
 ##### Canonical Form:
 
 > Either **`0`**, **`.inf`**, **`-.inf`**, **`.nan`**, or scientific notation
-matching the regular expression
+matching the regular expression  
 **`-? [1-9] ( \. [0-9]* [1-9] )? ( e [-+] [1-9] [0-9]* )?`**.
 
 
