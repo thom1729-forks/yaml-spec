@@ -1112,7 +1112,7 @@ In addition, an anchor need not have an alias node referring to it.
 
 ### #. Presentation Stream
 
-A YAML _presentation_ is a [stream] of Unicode characters making use of of
+A YAML _presentation_ is a [stream] of Unicode characters making use of
 [styles], [scalar content formats], [comments], [directives] and other
 [presentation details] to [present] a YAML [serialization] in a human readable
 way.
