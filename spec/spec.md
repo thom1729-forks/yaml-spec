@@ -4240,8 +4240,8 @@ implicit: entry,
 ```
 
 **Legend:**
-* [ns-flow-map-explicit-entry(n,c)] <!-- implicit:_entry -->
-* [ns-flow-map-implicit-entry(n,c)] <!-- explicit:_entry -->
+* [ns-flow-map-explicit-entry(n,c)] <!-- explicit:_entry -->
+* [ns-flow-map-implicit-entry(n,c)] <!-- implicit:_entry -->
 * [e-node] <!-- ° -->
 
 
