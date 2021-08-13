@@ -125,7 +125,7 @@ endif
 	    rm -f CNAME && \
 	    git add -A . && \
 	    git commit -m "'Publish fork '$(FORK_USER_ID)'" && \
-	    git push -f fork gh-pages \
+	    git push -f git@github.com:$(FORK_USER_ID)/$(REPO_NAME) gh-pages \
 	) || true
 	@echo
 	@echo "Published: https://$(FORK_USER_ID).github.io/$(REPO_NAME)"

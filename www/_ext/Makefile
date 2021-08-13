@@ -20,6 +20,7 @@ TMPEXT := /tmp/yaml-spec-ext
 
 .DELETE_ON_ERROR:
 default:
+	@echo $(EATME_REPO)
 
 build: $(ALL)
 

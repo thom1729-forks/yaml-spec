@@ -605,8 +605,18 @@ sub format_pre {
   $_ = $_[0];
   s/\n+\z/\n/;
 
-  s/\A```\n//;
+  s/\A```(.*)\n//;
+  my $lang = $1 || '';
   s/\n```\n\z//;
+
+  if ($lang eq 'mermaid') {
+    return <<"...";
+<div class="mermaid">
+$_
+</div>
+...
+  }
+
   s/&/&amp;/g;
   s/</&lt;/g;
   s/>/&gt;/g;
