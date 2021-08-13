@@ -9,8 +9,6 @@
 <link rel="stylesheet"
       type="text/css"
       href="//spec.css" />
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 </head>
 
 <body>
@@ -1155,19 +1153,7 @@ data model, as shown in the following diagram:</p>
 
 <p><strong>Figure 3.1. Processing Overview</strong></p>
 
-<div class="mermaid">
-  <p>graph LR
-    CS[Character<br />Stream]
-    ET[Event<br />Tree]
-    DG[DOM<br />Graph]
-    NG[Native<br />Graph]
-    CS–&gt;|Parse| ET
-    ET–&gt;|Compose|DG
-    DG–&gt;|Construct|NG
-    NG–&gt;|Represent|DG
-    DG–&gt;|Serialize|ET
-    ET–&gt;|Emit| CS</p>
-</div>
+<p><img src="/img/overview2.png" alt="Processing Overview" /></p>
 
 <p>A YAML processor need not expose the <a href="#serialization-tree">serialization</a> or <a href="#representation-graph">representation</a>
 stages.
