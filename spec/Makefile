@@ -1,17 +1,22 @@
 DOCKER_TOOL := html-to-markydown
 include ../tool/make/init.mk
 
+ALL_TEX := $(shell echo tex/*.tex)
+ALL_PNG := $(ALL_TEX:tex/%.tex=img/%.png)
 
 ALL := \
-    errata.md \
+    $(ALL_PNG) \
+
+default:
+	@echo $(ALL_PNG)
 
 build: $(ALL)
 
-%.md: $(SPEC12)/%.html
-	html-to-markydown $< > $@
+img/%.png: tex/%.tex
+	pdflatex -halt-on-error -output-directory /tmp $< >/dev/null
+	pdftoppm -png -r 750 $(<:tex/%.tex=/tmp/%.pdf) tmp
+	mv tmp-1.png $@
+	rm -f *.aux *.log *.pdf
 
-$(SPEC12)/%.html: $(SPEC12)/spec.html $(SPEC12)/%.dbk
-	make -C $(SPEC12) $(@:$(SPEC12)/%=%) YAML_SPEC_DIR=
-
-$(SPEC12)/spec.html:
-	make -C $(SPEC12) spec.html YAML_SPEC_DIR=
+clean:
+	rm -f $(ALL_PNG)
