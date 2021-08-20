@@ -8,11 +8,11 @@ main() (
 
   ( set -x; pdflatex -halt-on-error -output-directory /tmp "$input" ) |
   (
-  if [[ ${TEX_LOG-} ]]; then
-    cat
-  else
-    cat >/dev/null
-  fi
+    if [[ ${TEX_LOG-} ]]; then
+      cat
+    else
+      cat >/dev/null
+    fi
   )
   set -x
   pdftoppm -png -r 750 "$tmp" tmp

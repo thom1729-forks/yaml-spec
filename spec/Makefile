@@ -12,8 +12,8 @@ default:
 
 build: $(ALL)
 
-img/%.png: tex/%.tex
-	tex-to-png $< $@
-
 clean:
 	rm -f $(ALL_PNG)
+
+img/%.png: tex/%.tex
+	tex-to-png $< $@
